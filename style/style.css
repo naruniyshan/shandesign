@@ -11,4 +11,11 @@ header {
   background-color: burlywood;
   color: #12614c;
 }
+
+@media screen and (max-width: 576px) {
+  #main {
+    width: 50px;
+    background-color: brown;
+  }
+}
 /*# sourceMappingURL=style.css.map */

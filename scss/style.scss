@@ -10,3 +10,12 @@
         background-color: burlywood;
         color: rgb(18, 97, 76);
     }
+
+    // 加入判斷裝置的斷點
+    // 超小裝置 <576px
+    @media screen and (max-width: 576px) {
+        #main {
+            width: 50px;
+            background-color: brown;
+        }
+    }
