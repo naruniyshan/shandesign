@@ -1,9 +1,10 @@
  /* 樣式 */
     /* 對應 HTML5相同標籤或者呼叫 id（標籤自訂名稱-英文、數字和底線「_ 」；唯一）；class（重覆，共用樣式） */
+    // css 呼叫 id：輸入 #name
     header {
         width: 100%;
     }
-    main {
+    #main {
         /* 寬度 高度 背景顏色 文字顏色 */
         width: 50%;
         background-color: burlywood;
