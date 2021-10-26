@@ -1,2 +1,2 @@
-header{width:100%}#main{width:50%;background-color:burlywood;color:#12614c}@media screen and (max-width: 576px){#main{width:50px;background-color:brown}}
+header{width:100%}@media screen and (max-width: 576px){#main{width:50px;background-color:brown}}@media screen and (min-width: 576px){#main{width:70px;background-color:cadetblue}}@media screen and (min-width: 768px){#main{width:100px;background-color:yellowgreen}}@media screen and (min-width: 992px){#main{width:120px;background-color:violet}}@media screen and (min-width: 1200px){#main{width:140px;background-color:tomato}}@media screen and (min-width: 1400px){#main{width:50%;background-color:burlywood;color:#12614c}}
 /*# sourceMappingURL=style.min.css.map */
