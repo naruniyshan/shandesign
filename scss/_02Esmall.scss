@@ -1,4 +1,11 @@
-#main {
-    width: 50px;
-    background-color: brown;
+// scss 巢狀語法；呼叫元素選擇器（標籤選擇器）
+// 轉譯後為 後代選擇器 header nav #Portfolio { ... }
+header {
+    nav {
+        // 導覽列：只顯示 Logo 和 Menu，其餘不顯示
+        #Portfolio {
+            display: none;
+        }
+    }
 }
+
