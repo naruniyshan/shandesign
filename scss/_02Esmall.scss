@@ -7,6 +7,11 @@
     // 不顯示
     display: none;
 }
+%Subnav {
+    // 寬度 與 文字顏色 頁尾次選單
+    width: 50%;
+    color: white;
+}
 
 header {
     nav {
@@ -18,3 +23,19 @@ header {
     }
 }
 
+footer {
+    nav {
+        #Graphic {
+            @extend %Subnav;
+            background-color: yellowgreen;
+        }
+        #Web {
+            @extend %Subnav;
+            background-color: steelblue;
+        }
+        #Audio {
+            @extend %Subnav;
+            background-color: sienna;
+        }
+    }
+}

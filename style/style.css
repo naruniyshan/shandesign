@@ -10,6 +10,19 @@
   header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
     display: none;
   }
+  footer nav #Graphic, footer nav #Web, footer nav #Audio {
+    width: 50%;
+    color: white;
+  }
+  footer nav #Graphic {
+    background-color: yellowgreen;
+  }
+  footer nav #Web {
+    background-color: steelblue;
+  }
+  footer nav #Audio {
+    background-color: sienna;
+  }
 }
 
 @media screen and (min-width: 576px) {
