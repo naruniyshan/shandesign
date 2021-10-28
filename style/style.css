@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .Dn, header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
     display: none;
   }
 }
