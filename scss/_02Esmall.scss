@@ -18,7 +18,6 @@ header {
     nav {
         // 屬於 nav 寬度 % ；高度 px；背景色（暫）
         width: $NW;
-        // height: $NH;
         background-color: rosybrown;
 
         // 指向清單物件 li
@@ -28,6 +27,17 @@ header {
             // 解決方式一：父框架（外框架）設定高度；解決方式二：清除 clear 浮動狀態
             float: left;
         }
+        // 商標
+        #Logo {
+            // 寬度 8 等份
+            width: 100% / 10 * 8;
+        }
+        // 選單
+        #Menu {
+            // 寬度 2 等份
+            width: 100% / 10 * 2;
+        }
+
         .Clear {
             clear: both;
         }

@@ -22,6 +22,12 @@
   header nav li {
     float: left;
   }
+  header nav #Logo {
+    width: 80%;
+  }
+  header nav #Menu {
+    width: 20%;
+  }
   header nav .Clear {
     clear: both;
   }
