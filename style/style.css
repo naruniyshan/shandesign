@@ -20,6 +20,9 @@
     height: 65px;
     background-color: rosybrown;
   }
+  header nav li {
+    float: left;
+  }
   footer nav #Graphic {
     background-color: yellowgreen;
   }
