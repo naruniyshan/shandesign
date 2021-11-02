@@ -1,6 +1,11 @@
 // scss 巢狀語法；呼叫元素選擇器（標籤選擇器）
 // 轉譯後為 後代選擇器 header nav #Portfolio { ... }
 // scss 繼承
+// scss 變數 要計算的值或者常變動的值 $
+
+// 變數區
+$NW: 100%; // 導覽列的寬
+$NH: 65px; // 導覽列的高
 
 // 繼承區
 %Dn {
@@ -15,6 +20,11 @@
 
 header {
     nav {
+        // 屬於 nav 寬度 % ；高度 px；背景色（暫）
+        width: $NW;
+        height: $NH;
+        background-color: rosybrown;
+
         // 導覽列：只顯示 Logo 和 Menu，其餘不顯示
         // css3集合寫法，將共同的樣式一同編輯
         #Portfolio, #About, #Project, #Contact {
