@@ -31,6 +31,8 @@ header {
         #Logo {
             // 寬度 8 等份
             width: $W1 * 8 + 5%;
+            // 文字尺寸，內縮，水平置中
+            font-size: $Text * 2;
         }
         // 選單
         #Menu {
