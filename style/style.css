@@ -37,8 +37,11 @@ img {
   }
   header nav #Menu {
     width: 15%;
+    height: 80px;
     text-align: center;
     line-height: 80px;
+    background-image: url(../../images/icon/000001.svg);
+    background-color: coral;
   }
   header nav .Clear {
     clear: both;
