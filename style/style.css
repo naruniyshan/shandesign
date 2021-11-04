@@ -37,10 +37,8 @@ img {
   }
   header nav #Menu {
     width: 15%;
-  }
-  header nav #Menu img {
-    width: 80px;
-    background-color: aqua;
+    text-align: center;
+    line-height: 80px;
   }
   header nav .Clear {
     clear: both;
