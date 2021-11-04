@@ -35,6 +35,9 @@ img {
   header nav #Menu {
     width: 15%;
   }
+  header nav #Menu img {
+    background-color: aqua;
+  }
   header nav .Clear {
     clear: both;
   }
