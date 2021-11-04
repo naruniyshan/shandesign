@@ -33,6 +33,8 @@ header {
             width: $W1 * 8 + 5%;
             // 文字尺寸，內縮，水平置中
             font-size: $Trem * 2;
+            // 內縮：方法1，首行縮排（單行文字）
+            text-indent: 30px;
         }
         // 選單
         #Menu {

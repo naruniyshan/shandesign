@@ -30,6 +30,7 @@ img {
   header nav #Logo {
     width: 85%;
     font-size: 2rem;
+    text-indent: 30px;
   }
   header nav #Menu {
     width: 15%;
