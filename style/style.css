@@ -40,8 +40,11 @@ img {
     height: 80px;
     text-align: center;
     line-height: 80px;
+    text-indent: -9999px;
     background-image: url(../../images/icon/000001.svg);
-    background-color: coral;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   header nav .Clear {
     clear: both;
