@@ -16,6 +16,10 @@ img {
     height: auto;
 }
 
+.Clear {
+    clear: both;
+}
+
 // 變數區
 $W10: 100%;
 $Tpx: 16px;// 設定文字尺寸的基礎值 單位 16px（固定值）
