@@ -70,6 +70,13 @@ header {
             @extend %Dn;
         }
     }
+
+    // 輪播圖片 超小與小裝置 100% X 375px
+    #BannerBox {
+        width: $W10;
+        height: 280px;
+        background-color: aquamarine;
+    }
 }
 
 footer {
