@@ -53,6 +53,25 @@ img {
     height: 280px;
     background-color: aquamarine;
   }
+  header #BannerBox ul li {
+    width: 100%;
+    height: 280px;
+  }
+  header #BannerBox ul .Box1 {
+    background-color: burlywood;
+  }
+  header #BannerBox ul .Box2 {
+    background-color: chocolate;
+  }
+  header #BannerBox ul .Box3 {
+    background-color: blueviolet;
+  }
+  header #BannerBox ul .Box4 {
+    background-color: cornflowerblue;
+  }
+  header #BannerBox ul .Box5 {
+    background-color: crimson;
+  }
   footer nav #Graphic {
     background-color: yellowgreen;
   }
