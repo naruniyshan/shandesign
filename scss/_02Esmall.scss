@@ -75,7 +75,9 @@ header {
         ul {
             width: $W10 * 5;
             li {
-                // float: left;
+                width: 375px;
+                height: $BHsmall;
+                float: left;
             }
             .Box1 {
                 background-color: burlywood;
