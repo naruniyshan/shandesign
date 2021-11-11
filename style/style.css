@@ -56,12 +56,6 @@ img {
   }
   header #BannerBox ul {
     width: 500%;
-    height: 280px;
-  }
-  header #BannerBox ul li {
-    width: 100%;
-    height: 280px;
-    float: left;
   }
   header #BannerBox ul .Box1 {
     background-color: burlywood;
