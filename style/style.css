@@ -174,13 +174,17 @@ img {
   }
   header nav #Logo {
     width: 30%;
+  }
+  header nav li {
+    width: 17.5%;
+  }
+  header nav #Logo {
     text-align: center;
     font-size: 2rem;
     text-indent: 0;
     background-color: white;
   }
   header nav li {
-    width: 17.5%;
     text-align: center;
     font-size: 1.3rem;
     line-height: 4.3rem;
