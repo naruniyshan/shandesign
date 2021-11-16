@@ -173,9 +173,15 @@ img {
   header nav #Logo {
     width: 30%;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2rem;
     text-indent: 0;
     background-color: white;
+  }
+  header nav li {
+    width: 17.5%;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 4.3rem;
   }
   header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
     display: block;
