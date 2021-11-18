@@ -17,7 +17,7 @@
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  font-family: 'cwTeXYen', sans-serif,'微軟正黑體';
+  font-family: "cwTeXYen", sans-serif, "微軟正黑體";
 }
 
 img {
@@ -189,7 +189,10 @@ img {
     font-size: 1.3rem;
     line-height: 4.3rem;
   }
-  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
     display: block;
   }
   header nav #Menu {
