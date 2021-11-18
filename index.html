@@ -15,11 +15,22 @@
         <!-- 導覽列 nav：Logo（首頁）作品分享 關於宥姍 專案設計 聯絡表單  -->
         <nav>
             <!-- 清單 li -->
-            <li id="Logo">宥姍個人工作室</li>
-            <li id="Portfolio">作品分享</li>
-            <li id="About">關於宥姍</li>
-            <li id="Project">專案設計</li>
-            <li id="Contact">聯絡表單</li>
+            <li id="Logo">
+                <!-- 連結 a 商標連結首頁-->
+                <a href="index.html">宥姍個人工作室</a>
+            </li>
+            <li id="Portfolio">
+                <a href="#PortfolioBox">作品分享</a>
+            </li>
+            <li id="About">
+                <a href="#AboutBox">關於宥姍</a>
+            </li>
+            <li id="Project">
+                <a href="#ProjectBox">專案設計</a>
+            </li>
+            <li id="Contact">
+                <a href="#ContactBox">聯絡表單</a>
+            </li>
             <!-- 將圖片置入 li 標籤之中 src連結位置 alt取代文字 title圖片說明文-->
             <li id="Menu">
                 <!-- 將圖片改文字輸出，樣式設定還是顯示圖；符合 SEO 用法；因為圖片可以水平置中，但無法垂直置中 -->
@@ -57,16 +68,16 @@
     <!-- IE瀏覽器，不支援 main 標籤，取代方式有兩種；方法一：將 main 改為區塊（div）標籤，然後利用 ID選擇器命名；方法二：文章標籤（article）；若有多個相同標籤，請用 ID選擇器（唯一）或是 類別選擇器（class） 區分 -->
     <article id="main">
         <article>
-            <h1>作品分享</h1>
+            <h1 id="PortfolioBox">作品分享</h1>
         </article>
         <article>
-            <h1>關於宥姍</h1>
+            <h1 id="AboutBox">關於宥姍</h1>
         </article>
         <article>
-            <h1>專案設計</h1>
+            <h1 id="ProjectBox">專案設計</h1>
         </article>
         <article>
-            <h1>聯絡表單</h1>
+            <h1 id="ContactBox">聯絡表單</h1>
         </article>
     </article>
 
