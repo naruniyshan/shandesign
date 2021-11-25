@@ -4,10 +4,12 @@
 // scss 變數 要計算的值或者常變動的值 $
 
 header {
+	
 	nav {
 		// 屬於 nav 寬度 % ；高度 px；背景色（暫）
 		width: $NW;
-		height: $NH;
+		// 設定 手機版的導覽列 63行，定位點與階層語法，被 nav 的高度設定給抵消，所以才隱藏 nav 的高度
+		// height: $NH;
 		background-color: rosybrown;
 
 		// 指向清單物件 li
@@ -27,7 +29,6 @@ header {
 			text-indent: 30px;
 			// 文字水平置中，行距設定（父框架的高度 = 行距的數值） line-height: 80 * 0.15 + px;
 			line-height: $NH;
-			background-color: rgb(100, 93, 83);
 		}
 		// 選單
 		#Menu {
@@ -52,6 +53,9 @@ header {
 			// 呼叫 @mixin
 			@include DN;
 		}
+		.Clear {
+			@include Clear;
+		}
 	}
 
 	// 手機版的導覽列
@@ -59,6 +63,10 @@ header {
 		width: $W1 * 10;
 		// 高度單位 vh （裝置的可視高度）
 		height: 100vh;
+		// 定位點 絕對定位 設定階層
+		position: absolute;
+		z-index: 10;
+		display: none;
 		background-color: rgb(180, 86, 110);
 	}
 

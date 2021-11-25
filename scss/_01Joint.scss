@@ -32,9 +32,6 @@ img {
 	height: auto;
 }
 
-.Clear {
-	clear: both;
-}
 
 // 變數區
 $W10: 100%;
@@ -72,6 +69,10 @@ $W9: $W10 / 10 * 9; // 寬度 9 等份
 @mixin ON {
 	// 顯示方式：區塊
 	display: block;
+}
+
+@mixin Clear {
+	clear: both;
 }
 
 // 背景圖片替代文字
