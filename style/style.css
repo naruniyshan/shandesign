@@ -104,30 +104,44 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  footer #Graphic {
+  footer nav #Graphic {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  footer .LeftLine {
+  footer nav .LeftLine {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  footer #Web {
+  footer nav #Web {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  footer .RightLine {
+  footer nav .RightLine {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
   }
-  footer #Audio {
+  footer nav #Audio {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+  }
+  footer address {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  footer h6 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+    background-color: coral;
   }
 }
 
