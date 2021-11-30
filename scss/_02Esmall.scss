@@ -26,9 +26,11 @@ header {
 			// 文字尺寸，內縮，水平置中
 			font-size: $Tpx * 2;
 			// 內縮：方法1，首行縮排（單行文字）
-			text-indent: 30px;
+			// text-indent: 30px;
 			// 文字水平置中，行距設定（父框架的高度 = 行距的數值） line-height: 80 * 0.15 + px;
 			line-height: $NH;
+			// 對齊方式 置中
+			text-align: center;
 		}
 		// 選單
 		#Menu {
