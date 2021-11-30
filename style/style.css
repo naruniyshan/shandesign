@@ -140,7 +140,7 @@ a:hover {
   footer address .Line {
     width: 20%;
     height: 30px;
-    background-image: url(../../images/icon/LINE_Brand_icon.png);
+    background-image: url("../../images/$Folder/$Photo");
     text-indent: -9999px;
     background-position: center;
     background-repeat: no-repeat;
