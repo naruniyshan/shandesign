@@ -201,6 +201,64 @@ a:hover {
     height: 280px;
     float: left;
   }
+  footer .HRLine {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  footer nav {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer nav #Graphic {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer nav .LeftLine {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  footer nav #Web {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer nav .RightLine {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  footer nav #Audio {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  footer address {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  footer address .Line {
+    width: 20%;
+    height: 30px;
+    background-image: url(../../images/icon/000002.svg);
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  footer h6 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+    background-color: coral;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -279,6 +337,64 @@ a:hover {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: tomato;
+  }
+  footer .HRLine {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  footer nav {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer nav #Graphic {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer nav .LeftLine {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  footer nav #Web {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer nav .RightLine {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  footer nav #Audio {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  footer address {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  footer address .Line {
+    width: 20%;
+    height: 30px;
+    background-image: url(../../images/icon/000002.svg);
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  footer h6 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+    background-color: coral;
   }
 }
 
