@@ -152,6 +152,14 @@ a:hover {
   }
   #main #ContactBox {
     width: 90vw;
+    background-color: coral;
+  }
+  #main #ContactBox #ContactTitle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #main #ContactBox form #NameBox {
+    background-color: burlywood;
   }
   #main #ContactBox form .E_mail2 {
     display: none;

@@ -155,8 +155,24 @@ footer {
 	#ContactBox {
 		// 寬度 左右留白
 		width: $W1 * 9;
+		background-color: coral;
+
+		// 標題
+		#ContactTitle {
+			// 外間距 margin；上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
+			padding: {
+				top: 15px;
+				bottom: 15px;
+			}
+		}
 
 		form {
+
+			// 姓名
+			#NameBox {
+				background-color: burlywood;
+			}
+
 			.E_mail2 {
 				@include DN;
 			}
