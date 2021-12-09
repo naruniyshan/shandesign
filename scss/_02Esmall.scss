@@ -22,7 +22,7 @@ header {
 		// 商標
 		#Logo {
 			// 寬度 8.5 等份
-			width: $W1 * 8 + 5%;
+			width: $W1 * 8 + 5vw;
 			// 文字尺寸，內縮，水平置中
 			font-size: $Tpx * 2;
 			// 內縮：方法1，首行縮排（單行文字）
@@ -35,7 +35,7 @@ header {
 		// 選單
 		#Menu {
 			// 寬度 1.5 等份
-			width: $W1 + 5%;
+			width: $W1 + 5vw;
 			// height: 100%;
 			// 文字水平（行距）、垂直（文字對齊 -- 置中）置中
 			text-align: center;
