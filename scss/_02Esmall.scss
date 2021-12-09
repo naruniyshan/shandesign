@@ -149,3 +149,17 @@ footer {
 		background-color: coral;
 	}
 }
+
+#main {
+
+	#ContactBox {
+		// 寬度 左右留白
+		width: $W1 * 9;
+
+		form {
+			.E_mail2 {
+				@include DN;
+			}
+		}
+	}
+}
