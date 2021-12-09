@@ -151,15 +151,18 @@ a:hover {
     background-color: coral;
   }
   #main #ContactBox {
-    width: 90vw;
     background-color: coral;
   }
   #main #ContactBox #ContactTitle {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main #ContactBox form #NameBox {
-    background-color: burlywood;
+  #main #ContactBox form {
+    width: 90vw;
+  }
+  #main #ContactBox form > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #main #ContactBox form .E_mail2 {
     display: none;
@@ -189,7 +192,10 @@ a:hover {
     background-size: contain;
     background-image: url(../../images/icon/000001.svg);
   }
-  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
     display: none;
   }
   header #MobileNav {
@@ -277,7 +283,10 @@ a:hover {
     text-align: center;
     text-indent: 0;
   }
-  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
     display: none;
   }
   header #BannerBox {
@@ -434,10 +443,12 @@ a:hover {
   }
   header #BannerBox .ImgBox {
     width: 500vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
-    float: left;
   }
 }
 
