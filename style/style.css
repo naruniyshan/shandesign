@@ -168,6 +168,14 @@ a:hover {
   #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .Text > li {
     margin-bottom: 10px;
   }
+  #main #ContactBox form > #NameBox > input[type=text], #main #ContactBox form > .Mail > input {
+    width: 75%;
+    height: 30px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    color: brown;
+    font-weight: 500;
+  }
   #main #ContactBox form > div {
     font-size: 1.3rem;
   }
@@ -181,8 +189,21 @@ a:hover {
   #main #ContactBox form > #NameBox > label {
     width: 100%;
   }
-  #main #ContactBox form > #NameBox > input {
-    width: 75%;
+  #main #ContactBox form > #NameBox > input[type=text]::-webkit-input-placeholder {
+    color: brown;
+    font-weight: 600;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]:-ms-input-placeholder {
+    color: brown;
+    font-weight: 600;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::-ms-input-placeholder {
+    color: brown;
+    font-weight: 600;
+  }
+  #main #ContactBox form > #NameBox > input[type=text]::placeholder {
+    color: brown;
+    font-weight: 600;
   }
   #main #ContactBox form > .Mail {
     display: -webkit-box;
@@ -193,9 +214,6 @@ a:hover {
   }
   #main #ContactBox form > .Mail > label {
     width: 100%;
-  }
-  #main #ContactBox form > .Mail > input {
-    width: 75%;
   }
   #main #ContactBox form > .Ques {
     display: -webkit-box;
