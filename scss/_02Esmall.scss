@@ -181,6 +181,29 @@ footer {
 				@extend %PI;
 			}
 
+			> .Ques {
+				// 彈性佈局
+				display: flex;
+				// 換行
+				flex-wrap: wrap;
+
+				> p {
+					// 寬度
+					width: 100%;
+					// 外間距
+					margin: {
+						bottom: 15px;
+					}
+				}
+				> li {
+					// 寬度
+					width: 50%;
+					margin: {
+						bottom: 15px;
+					}
+				}
+			}
+
 			.E_mail2 {
 				@include DN;
 			}

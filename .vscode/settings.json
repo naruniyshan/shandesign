@@ -24,6 +24,8 @@
         "> 1%",
         "last 2 versions"
     ],
+    "prettier.tabWidth": 4,
+    "vsicons.dontShowNewVersionMessage": true,
     "editor.linkedEditing": true,
     "git.confirmSync": false,
     "git.autofetch": true,
