@@ -150,6 +150,9 @@ a:hover {
     font-weight: 200;
     background-color: coral;
   }
+  #main #ContactBox {
+    background-image: url(../../images/bg/w-07win-7.gif);
+  }
   #main #ContactBox #ContactTitle {
     padding-top: 15px;
     padding-bottom: 15px;
