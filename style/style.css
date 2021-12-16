@@ -40,9 +40,14 @@ a:hover {
 }
 
 @media screen and (max-width: 576px) {
+  #Top {
+    display: none;
+  }
   header nav {
     width: 100vw;
-    background-color: rosybrown;
+    position: fixed;
+    top: 0;
+    background-color: white;
   }
   header nav li {
     float: left;
@@ -84,6 +89,7 @@ a:hover {
     width: 100vw;
     overflow-x: auto;
     background-color: aquamarine;
+    margin-top: 65px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
@@ -253,8 +259,14 @@ a:hover {
 }
 
 @media screen and (min-width: 576px) {
+  #Top {
+    display: none;
+  }
   header nav {
     width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: white;
   }
   header nav li {
     float: left;
@@ -293,6 +305,7 @@ a:hover {
     width: 100vw;
     overflow-x: auto;
     background-color: aquamarine;
+    margin-top: 65px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;

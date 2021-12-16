@@ -3,6 +3,10 @@
 // scss 繼承
 // scss 變數 要計算的值或者常變動的值 $
 
+#Top {
+	@include DN;
+}
+
 header {
 	
 	nav {
@@ -10,7 +14,12 @@ header {
 		width: $NW;
 		// 設定 手機版的導覽列 63行，定位點與階層語法，被 nav 的高度設定給抵消，所以才隱藏 nav 的高度
 		// height: $NH;
-		background-color: rosybrown;
+
+		// 停佇在畫面上方，不隨著畫面划動而消失
+		position: fixed;
+		top: 0;
+
+		background-color: rgb(255, 255, 255);
 
 		// 指向清單物件 li
 		li {
@@ -80,6 +89,12 @@ header {
 		// 超出範圍設定，能滑動X軸，讓圖片在框架中左右滑動
 		overflow-x: auto;
 		background-color: aquamarine;
+
+		// 導覽固定在上方，會形成浮動狀態，故廣告區的上方要用 外間距設定為高度
+		margin: {
+			top: $NH;
+		}
+
 		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;
@@ -180,7 +195,7 @@ footer {
 					bottom: 5px;
 				}
 			}
-			
+
 			%TitlM {
 				margin: {
 					bottom: 10px;
