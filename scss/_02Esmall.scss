@@ -166,7 +166,7 @@ footer {
 
 		form {
 			// 寬度 左右留白
-			width: $W1 * 7.5;
+			width: $WPer * 8;
 			// background-color: coral;
 			// 繼承 單獨為表單使用
 			%PI {
@@ -185,7 +185,7 @@ footer {
 			}
 
 			%InputInBox {
-				width: $WPer * 7.5;
+				width: $WPer * 10;
 				height: 30px;
 				font-size: $Trem * 1.1;
 				// 內間距
@@ -216,10 +216,10 @@ footer {
 				> input[type=text] {
 					@extend %InputInBox;
 				}
-				// 偽類別，使用者觀看到的樣式
+				// 偽元素，使用者觀看到的樣式；表單統一設計樣式
 				> input[type=text]::placeholder{
-					color: brown;
-					font-weight: 600;
+					// color: brown;
+					// font-weight: 600;
 				}
 			}
 
@@ -253,16 +253,50 @@ footer {
 					margin: {
 						bottom: 15px;
 					}
+					text-align: center;
 				}
 			}
 
-			> .Text {
+			> .TextArea {
 				> li {
 					width: $WPer * 10;
 					@extend %TitlM;
 				}
 				> textarea {
-					width: $WPer * 9.5;
+					width: $WPer * 10;
+					font-size: $Trem * 1.2;
+					
+				}
+			}
+
+			> .FormBtn {
+				width: $WPer * 10;
+				display: flex;
+				
+				> input[type=submit] {
+					width: 100px;
+					height: 35px;
+					font-size: $Trem * 1.2;
+					order: 2;
+					color: white;
+					// 按鈕平面化，邊框線段為 0
+					border: 0;
+					// 圓角
+					border-radius: 15px;
+					background-color: rgb(177, 6, 40);
+				}
+
+				> input[type=reset] {
+					width: 100px;
+					height: 35px;
+					font-size: $Trem * 1.2;
+					order: 1;
+					color: white;
+					// 按鈕平面化，邊框線段為 0
+					border: 0;
+					// 圓角
+					border-radius: 15px;
+					background-color: rgb(1, 89, 190);
 				}
 			}
 
