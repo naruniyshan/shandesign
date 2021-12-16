@@ -93,7 +93,6 @@ a:hover {
     float: left;
   }
   footer .HRLine {
-    margin-top: 15px;
     margin-bottom: 15px;
   }
   footer nav {
@@ -162,7 +161,7 @@ a:hover {
   }
   #main #ContactBox form > div {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-bottom: 5px;
   }
   #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .TextArea > li {
@@ -175,6 +174,14 @@ a:hover {
     padding-left: 10px;
     color: brown;
     font-weight: 500;
+  }
+  #main #ContactBox form > .FormBtn > input[type=submit], #main #ContactBox form > .FormBtn > input[type=reset] {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    color: white;
+    border: 0;
+    border-radius: 15px;
   }
   #main #ContactBox form > div {
     font-size: 1.3rem;
@@ -226,29 +233,18 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 0;
   }
   #main #ContactBox form > .FormBtn > input[type=submit] {
-    width: 100px;
-    height: 35px;
-    font-size: 1.2rem;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    color: white;
-    border: 0;
-    border-radius: 15px;
     background-color: #b10628;
   }
   #main #ContactBox form > .FormBtn > input[type=reset] {
-    width: 100px;
-    height: 35px;
-    font-size: 1.2rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    color: white;
-    border: 0;
-    border-radius: 15px;
     background-color: #0159be;
   }
   #main #ContactBox form .E_mail2 {
@@ -306,11 +302,10 @@ a:hover {
     float: left;
   }
   footer .HRLine {
-    margin-top: 15px;
     margin-bottom: 15px;
   }
   footer nav {
-    width: 80vw;
+    width: 70vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -362,6 +357,107 @@ a:hover {
     font-size: 0.8rem;
     font-weight: 200;
     background-color: coral;
+  }
+  #main #ContactBox {
+    background-image: url(../../images/bg/w-07win-7.gif);
+  }
+  #main #ContactBox #ContactTitle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #main #ContactBox form {
+    width: 65%;
+  }
+  #main #ContactBox form > div {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+  }
+  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .TextArea > li {
+    margin-bottom: 10px;
+  }
+  #main #ContactBox form > #NameBox > input[type=text], #main #ContactBox form > .Mail > input {
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    color: brown;
+    font-weight: 500;
+  }
+  #main #ContactBox form > .FormBtn > input[type=submit], #main #ContactBox form > .FormBtn > input[type=reset] {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+  }
+  #main #ContactBox form > div {
+    font-size: 1.3rem;
+  }
+  #main #ContactBox form > #NameBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > #NameBox > label {
+    width: 100%;
+  }
+  #main #ContactBox form > .Mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Mail > label {
+    width: 100%;
+  }
+  #main #ContactBox form > .Ques {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Ques > p {
+    width: 100%;
+  }
+  #main #ContactBox form > .Ques > li {
+    width: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  #main #ContactBox form > .TextArea > li {
+    width: 100%;
+  }
+  #main #ContactBox form > .TextArea > textarea {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  #main #ContactBox form > .FormBtn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
+  #main #ContactBox form > .FormBtn > input[type=submit] {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background-color: #b10628;
+  }
+  #main #ContactBox form > .FormBtn > input[type=reset] {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background-color: #0159be;
+  }
+  #main #ContactBox form .E_mail2 {
+    display: none;
   }
 }
 
@@ -422,15 +518,7 @@ a:hover {
     overflow-x: auto;
     background-color: #15628f;
   }
-  #main article {
-    width: 100vw;
-    height: 650px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: tomato;
-  }
   footer .HRLine {
-    margin-top: 15px;
     margin-bottom: 15px;
   }
   footer nav {
@@ -487,6 +575,107 @@ a:hover {
     font-weight: 200;
     background-color: coral;
   }
+  #main #ContactBox {
+    background-image: url(../../images/bg/w-07win-7.gif);
+  }
+  #main #ContactBox #ContactTitle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #main #ContactBox form {
+    width: 53%;
+  }
+  #main #ContactBox form > div {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+  }
+  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .TextArea > li {
+    margin-bottom: 10px;
+  }
+  #main #ContactBox form > #NameBox > input[type=text], #main #ContactBox form > .Mail > input {
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    color: brown;
+    font-weight: 500;
+  }
+  #main #ContactBox form > .FormBtn > input[type=submit], #main #ContactBox form > .FormBtn > input[type=reset] {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+  }
+  #main #ContactBox form > div {
+    font-size: 1.3rem;
+  }
+  #main #ContactBox form > #NameBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > #NameBox > label {
+    width: 100%;
+  }
+  #main #ContactBox form > .Mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Mail > label {
+    width: 100%;
+  }
+  #main #ContactBox form > .Ques {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main #ContactBox form > .Ques > p {
+    width: 100%;
+  }
+  #main #ContactBox form > .Ques > li {
+    width: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  #main #ContactBox form > .TextArea > li {
+    width: 100%;
+  }
+  #main #ContactBox form > .TextArea > textarea {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  #main #ContactBox form > .FormBtn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
+  #main #ContactBox form > .FormBtn > input[type=submit] {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background-color: #b10628;
+  }
+  #main #ContactBox form > .FormBtn > input[type=reset] {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background-color: #0159be;
+  }
+  #main #ContactBox form .E_mail2 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -536,6 +725,9 @@ a:hover {
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
+  }
+  #main > #ContactBox > form {
+    width: 45%;
   }
 }
 
