@@ -2,6 +2,7 @@
     "workbench.colorTheme": "Default Dark+",
     "editor.fontSize": 18,
     "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
     "workbench.iconTheme": "vscode-icons",
     "liveSassCompile.settings.formats": [
         {
@@ -25,9 +26,7 @@
         "last 2 versions"
     ],
     "prettier.tabWidth": 4,
+    "prettier.semi": true,
     "vsicons.dontShowNewVersionMessage": true,
-    "editor.linkedEditing": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "git.enableSmartCommit": true
+    "editor.linkedEditing": true
 }
