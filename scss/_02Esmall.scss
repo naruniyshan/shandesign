@@ -96,6 +96,9 @@ header {
             top: $NH;
         }
 
+        // 相對定位（移動物件的定位點）-- 重新定位
+        position: relative;
+
         // 輪播圖左右按鈕
         > .Arrow {
             width: $WPer * 10;
@@ -109,8 +112,12 @@ header {
             text-align: center;
             // 垂直置中
             line-height: 80px;
-            // 往中間設定
-            top: ((576 / 2) - (80 / 2)) / 576 * 100%;
+            // 設定為 50% 位置
+            top: 50%;
+            // 外間距
+            margin: {
+                top: -40px;
+            }
             display: flex;
 
             > .arrow {
@@ -119,6 +126,8 @@ header {
                 // 圓角矩形
                 border-radius: 20px;
                 background-color: rgba(255, 255, 255, 0.3);
+                // 定位點 停佇
+                // position: fixed;
             }
 
             > .Larrow {
@@ -135,9 +144,35 @@ header {
         .ImgBox {
             // 圖片框的寬度尺寸
             width: $W10 * 5;
+            // 呼叫動畫 動畫名稱 總秒數 播放次數（無限播放）
+            animation: move 25s infinite;
             .SmallImg {
                 width: 100vw;
                 float: left;
+            }
+        }
+
+        // 動畫 1.設定關鍵影格 2.呼叫動畫
+        @keyframes move {
+            0%,
+            20% {
+                transform: translateX(0vw);
+            }
+            25%,
+            40% {
+                transform: translateX(-100vw);
+            }
+            45%,
+            60% {
+                transform: translateX(-200vw);
+            }
+            65%,
+            80% {
+                transform: translateX(-300vw);
+            }
+            85%,
+            100% {
+                transform: translateX(-400vw);
             }
         }
     }
