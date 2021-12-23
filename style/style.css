@@ -184,10 +184,6 @@ a:hover {
     width: 100vw;
     float: left;
   }
-  header #BannerBox .ImgBox > .SmallImg:hover {
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
   footer .HRLine {
     margin-bottom: 15px;
   }
@@ -672,6 +668,10 @@ a:hover {
   header #BannerBox > .Arrow > .arrow {
     width: 2.5%;
     height: 120px;
+  }
+  header #BannerBox > .ImgBox:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }
   footer .HRLine {
     margin-bottom: 15px;
