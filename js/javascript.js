@@ -109,11 +109,73 @@ console.log("z=", z);
 
 // 條件分支 if(條件){成立時執行的動作}else{不成立時執行的動作}
 // 如果沒有「不成立」時要執行的動作，可以省略 else 不寫
-if(window.confirm('繼續請按確定，退出請按取消')) {
-    // 控制台訊息 
-    console.log('確定');
-    document.getElementById('TestBox').textContent = "確定";
-}else {
-    console.log('已取消');
-    document.getElementById('TestBox').textContent = "已取消";
+// 方法
+function WinCon() {
+    if(window.confirm('繼續請按確定，退出請按取消')) {
+        // 控制台訊息 
+        console.log('確定');
+        document.getElementById('TestBox').textContent = "確定";
+    }else {
+        console.log('已取消');
+        document.getElementById('TestBox').textContent = "已取消";
+    }
+}
+
+
+// 輸入對話框 window.prompt('提示訊息')
+
+// window.prompt('請輸入資料');
+
+// 帳密登入邏輯 
+// 1. 設定變數，只依靠window.prompt的一個輸入框，故只設定一個變數即可
+// 2. 判斷式 變數值 與 輸入值 比對(==)；相同才會顯示資料；比對(==)，只要輸的資料相同即可通過
+
+// 全域變數
+let TestName = document.getElementById('TestBox');
+
+// 全域變數需設定在方法之上，不然會呼叫不到
+
+// 呼叫方法
+// login();
+
+
+// 方法
+function login() {
+    
+    // 區域變數
+    let Ans = window.prompt('請輸入帳號');
+    let Number;
+
+    if( Ans == 'shan') {
+        // console.log(Ans);
+        Number = window.prompt('請輸入密碼');
+
+        if( Number == '12345') {
+            TestName.textContent="歡迎進入系統";
+        }
+        
+    } else {
+        Ans = "帳號密碼輸入錯誤！"
+        // console.log(Ans);
+        TestName.textContent = Ans;
+    }
+}
+TimeItem();
+// 按照時間顯示不同訊息
+function TimeItem() { 
+
+    // 區域變數 時間（時）
+    let hour = new Date().getHours();
+
+    // 判斷式 1. 早上 9點 和（或 ||） 下午 3點，顯示「現在買 1 送 1 喔！」；一個條件成立即可
+    // 2. 晚上 7點之後到 晚上 9點前（和 &&），顯示「所有商品 7 折，特價品除外」；兩個條件要同時成立
+    // 3. 其他時間顯示「歡迎團購商品！」；除了上述條件之外，都會成立
+    // 多條件判斷式 if(條件){成立} else if(條件){成立} else{上述條件都不成立}
+    if (hour == 9 || hour == 15 ) {
+        TestName.textContent = "現在買 1 送 1 喔！";
+    } else if (hour >=19 && hour <21) {
+        TestName.textContent = "所有商品 7 折，特價品除外";
+    } else {
+        TestName.textContent = "歡迎團購商品！";
+    }
 }
