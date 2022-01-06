@@ -1,4 +1,5 @@
-document.write("javascript！");
+function TestCode() {
+    document.write("javascript！");
 
 // 資料型別（原生）：數值（Number）、字串（String）、布林（boolean）、未定義（undefined）、空值（null）
 // 物件型別（object）、符號（symbol）
@@ -97,6 +98,7 @@ let x=2, Y=0;
 // 測試可用 控制台 呼叫
 console.log("c=", c);
 console.log("z=", z);
+}
 
 // var 的全域與區域的作用，只存在 function（函數）之內
 // { 區塊敘述 } if、else、for、while
@@ -177,5 +179,69 @@ function TimeItem() {
         TestName.textContent = "所有商品 7 折，特價品除外";
     } else {
         TestName.textContent = "歡迎團購商品！";
+    }
+}
+
+// ForCode();
+// 迴圈 for (初始化;迴圈的條件;每次執行後的動作){語法}
+// i = i + 1 原始寫法 i++ ；「++」加法運算子 數字 + 數字；「--」減法運算子 數字 - 數字
+function ForCode() {
+    let i;
+    for ( i = 1; i <= 10; i++ ){
+        console.log(i);
+    }
+
+    let q;
+    for ( q = 10; q > 0 ; q--) {
+        console.log(q);
+    }
+}
+
+// 迴圈 while(條件){執行程式}
+// WhileCode();
+function WhileCode() {
+    // 總數
+    let Number = 100;
+    // 亂數（系統產生的亂數，會介於 0 ~ 1 之間）；每次亂數都要大於 30 小於 40
+    // 亂數求整數值時，需乘以「基數」
+    let attack;
+    while(Number > 0) {
+        // 產生亂數 Math.random() -- 0 ~ 1
+        attack = Math.floor(Math.random() * 41);
+        console.log('亂數值：'+attack);
+
+
+        if (attack > 30)
+            Number = Number - attack;
+
+        // 小於 0 Number等於0
+        if (Number < 0)
+            Number = 0;
+        
+        console.log('計算結果：' + Number);
+    }
+
+    
+}
+
+// let ac = Math.random();
+// console.log(ac);
+
+// let ack = Math.random() * 41;
+// console.log(ack);
+
+// let ackk = Math.floor(Math.random() * 41 );
+// console.log(ackk);
+
+// if ( ackk > 30 )
+//     console.log(ackk);
+
+ArrayCode();
+// 陣列 ['資料','資料']；利用索引編號找值；陣列第一筆資料編號永遠為 0（除非重新設定） 
+function ArrayCode(){
+    let Items =['01',01,'項目'];
+    // Items.length 陣列的長度
+    for (let i = 0; i < Items.length; i++) {
+        console.log(Items[i]);
     }
 }
