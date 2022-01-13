@@ -12,6 +12,7 @@ header {
         // 停佇在畫面上方，不隨著畫面划動而消失
         position: fixed;
         top: 0;
+        z-index: 999;
 
         background-color: white;
 
@@ -60,14 +61,27 @@ header {
 
     // 手機版的導覽列
     #MobileNav {
-        width: $W1 * 10;
+        width: $WPer * 10;
         // 高度單位 vh （裝置的可視高度）
         height: 100vh;
         // 定位點 絕對定位 設定階層
         position: absolute;
-        z-index: 10;
+        z-index: 9999;
         display: none;
+        position: fixed;
         background-color: rgb(180, 86, 110);
+
+        > li {
+            width: $WPer * 7.5;
+            margin: {
+                top: 35px;
+            }
+
+            > a {
+                color: white;
+                font-size: $Trem * 1.5;
+            }
+        }
     }
 
     // 輪播圖片 超小與小裝置 100% X 280px（圖片以大尺寸 1920 x 600 為基礎計算）
@@ -114,17 +128,19 @@ header {
                 border-radius: 20px;
                 background-color: rgba(255, 255, 255, 0.3);
                 // 定位點 停佇
-                position: fixed;
+                // position: fixed;
             }
 
             > .Larrow {
                 // 靠左
                 left: 10px;
+                margin-left: 12px;
             }
 
             > .Rarrow {
                 // 靠右
                 right: 10px;
+                margin-right: 12px;
             }
         }
 
