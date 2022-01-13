@@ -80,7 +80,8 @@ header {
         z-index: 9999;
         // 停佇
         position: fixed;
-        display: none;
+        top: 0;
+        // display: none;
         color: white;
         background-color: rgb(150, 52, 77);
 
@@ -94,6 +95,12 @@ header {
                 color: white;
                 font-size: $Trem * 1.7;
             }
+        }
+
+        > .Close {
+            width: $WPer * 2;
+            text-align: right;
+            margin-right: $WPer * 0.5;
         }
     }
 

@@ -134,7 +134,7 @@ a {
     position: absolute;
     z-index: 9999;
     position: fixed;
-    display: none;
+    top: 0;
     color: white;
     background-color: #96344d;
   }
@@ -145,6 +145,11 @@ a {
   header #MobileNav > li > a {
     color: white;
     font-size: 1.7rem;
+  }
+  header #MobileNav > .Close {
+    width: 20%;
+    text-align: right;
+    margin-right: 5%;
   }
   header #BannerBox {
     width: 100vw;
@@ -454,6 +459,7 @@ a {
     z-index: 9999;
     display: none;
     position: fixed;
+    top: 0;
     background-color: #b4566e;
   }
   header #MobileNav > li {
@@ -463,6 +469,15 @@ a {
   header #MobileNav > li > a {
     color: white;
     font-size: 1.5rem;
+  }
+  header #MobileNav > .Close {
+    width: 10%;
+    font-size: 1.3rem;
+    color: sandybrown;
+    font-weight: 600;
+    margin-right: 5%;
+    text-align: right;
+    background-color: seagreen;
   }
   header #BannerBox {
     width: 100vw;
