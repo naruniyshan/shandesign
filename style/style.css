@@ -242,8 +242,6 @@ a {
   }
   header #BannerBox > .RadioBox > .ImgBox {
     width: 500vw;
-    -webkit-animation: move 25s infinite alternate;
-            animation: move 25s infinite alternate;
   }
   header #BannerBox > .RadioBox > .ImgBox .SmallImg {
     width: 100vw;
@@ -570,8 +568,6 @@ a {
   }
   header #BannerBox > .RadioBox > .ImgBox {
     width: 500vw;
-    -webkit-animation: move 25s infinite alternate;
-            animation: move 25s infinite alternate;
   }
   header #BannerBox > .RadioBox > .ImgBox .SmallImg {
     width: 100vw;
@@ -816,10 +812,6 @@ a {
   header #BannerBox > .Arrow > .arrow {
     width: 2.5%;
     height: 120px;
-  }
-  header #BannerBox > .ImgBox:hover {
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
   }
   footer .HRLine {
     margin-bottom: 15px;
