@@ -3,6 +3,8 @@ AddArticles();
 function AddArticles() {
     // 陣列 id
     let ArtId = ['PortfolioBox', 'AboutBox', 'ProjectBox'];
+    let ArtH1 = ['PortfolioTitle', 'AboutTitle', 'ProjectTitle'];
+    let ArtH1Con = ['作品分享', '關於宥姍', '專案設計'];
 
     // 主要的 article id=main
     let Main = document.getElementById("main");
@@ -11,17 +13,27 @@ function AddArticles() {
     for ( let i = 0; i < ArtId.length; i++ ) {
         // 要新增的標籤 article
         let art = document.createElement("article");
+        let h1 = document.createElement("h1");
 
         // 新增 article 的 id
-        art.setAttribute("id", ArtId[i]); 
+        art.setAttribute("id", ArtId[i]);
+        h1.setAttribute("id", ArtH1[i]); 
 
         // 在框架內新增子元素 main > article
         Main.appendChild(art);
+        art.appendChild(h1);
 
         // 標籤要在 #ContactBox 之上
         let Con = document.getElementById("ContactBox");
         Con.before(art);
+
+        // 置入文字
+        h1.innerHTML = ArtH1Con[i];
+
     }
+
+    // 將網頁資料，用載入的方式置入框架中
+    $('#PortfolioBox').load('../webs/graphic.html');
 };
 
 // jQuery 語法

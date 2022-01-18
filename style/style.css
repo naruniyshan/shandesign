@@ -134,7 +134,6 @@ a {
     position: absolute;
     z-index: 9999;
     position: fixed;
-    top: 0;
     color: white;
     background-color: #96344d;
   }
@@ -879,9 +878,6 @@ a {
     font-weight: 200;
     background-color: coral;
   }
-  #main article {
-    height: 1650px;
-  }
   #main #ContactBox {
     background-image: url(../../images/bg/w-07win-7.gif);
   }
@@ -1039,7 +1035,7 @@ a {
 
 @media screen and (min-width: 1400px) {
   header nav {
-    width: 100vw;
+    width: 100%;
     background-color: #4f6794;
     display: -webkit-box;
     display: -ms-flexbox;
