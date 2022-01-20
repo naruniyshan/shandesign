@@ -95,8 +95,10 @@ function BannerChang() {
     let Images = document.getElementById('Images');
     let AllButton = $('#AllButtons > label');
     let AllLeng = AllButton.length;
+    let BannerBox = document.getElementById('BannerBox');
 
     AllButtons();
+    AutoChang();
     function AllButtons() {
         
         // 迴圈 新增按鈕
@@ -115,8 +117,17 @@ function BannerChang() {
                 });
             });
         }
-        AutoChang();
     }
+
+    // 滑鼠移入圖片，清除計時器（停止）
+    // $(BannerBox).on('mouseenter',function() {
+    //     BannerBox.clearInterval( AutoChang() ) ;
+    // });
+
+    // 滑鼠移出圖片，恢復計時
+    // $(BannerBox).mouseleave(function() {
+    //     AutoChang();
+    // });
 
     // 自動輪播
     function AutoChang() {
@@ -134,7 +145,6 @@ function BannerChang() {
             // removeClass( 類別class名稱 )移除 class 名稱
             AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblings('.blue').removeClass('blue');
         }, 3000 );
-
     }
 
 
