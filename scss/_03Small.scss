@@ -33,6 +33,15 @@ header {
             text-indent: 30px;
             // 文字水平置中，行距設定（父框架的高度 = 行距的數值） line-height: 80 * 0.15 + px;
             line-height: $NH;
+
+            text-indent: -9999px;
+
+            > a {
+                width: $WPer * 6;
+                line-height: $NH;
+                display: block;
+                @include BG(icon,  'logo.png', contain);
+            };
         }
         // 選單
         #Menu {
@@ -327,6 +336,39 @@ footer {
 }
 
 #main {
+    > #PortfolioBox {
+        > h1 {
+            text-align: center;
+            font-size: $Trem * 2;
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+
+    > #AboutBox {
+        background-image: url(../../images/bg/w-07win-7.gif);
+        > h1 {
+            text-align: center;
+            font-size: $Trem * 2;
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+
+    > #ProjectBox {
+        > h1 {
+            text-align: center;
+            font-size: $Trem * 2;
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+    }
     #ContactBox {
         background-image: url(../../images/bg/w-07win-7.gif);
 
