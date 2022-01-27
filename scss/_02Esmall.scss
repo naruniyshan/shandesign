@@ -382,6 +382,52 @@ footer {
         > .AboCon {
             width: 90%;
             padding-bottom: 15px;
+            // 文字尺寸與對齊方式
+            text-align: justify;
+            font-size: $Trem * 1.3;
+            // 行距 同單位加減
+            line-height: $Tpx * 1.3 + 5px;
+
+            > div {
+                    // about 內容
+                > p {
+                    margin: {
+                        top: 10px;
+                        bottom: 10px;
+                    }
+                }
+                > ul {
+                    // 彈性佈局
+                    display: flex;
+                    // 換行
+                    flex-wrap: wrap;
+                    > li {
+                        width: 47%;
+                    }
+                    > .full {
+                        width: 97%;
+                    }
+                }
+                > .TextCon {
+                    margin: {
+                        top: 10px;
+                        bottom: 10px;
+                    }
+
+                    div {
+                        margin: {
+                            top: 10px;
+                            bottom: 10px;
+                        };
+                    }
+
+                    h5 {
+                        font-size: $Trem * 1.4;
+                        text-align: center;
+                        color: rgb(153, 41, 0);
+                    }
+                }
+            }
         }
     }
 
@@ -402,6 +448,7 @@ footer {
 
         // 標題
         #ContactTitle {
+            width: $WPer * 9;
              text-align: center;
             font-size: $Trem * 2;
              // 外間距 margin；上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
@@ -410,6 +457,10 @@ footer {
                 bottom: 15px;
             }
             color: rgb(54, 7, 7);
+            border-bottom: 1px solid rgb(54, 7, 7);
+            margin: {
+                bottom: 30px;
+            }
         }
 
         form {

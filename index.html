@@ -144,7 +144,7 @@
             <h1 id="ContactTitle">聯絡表單</h1>
             <!-- 表單 form ，實際用途是傳輸資料用，將資料寫入資料庫或由資料庫讀出修改 -->
             <!-- get傳輸不重要的資料，資料會顯示在網址上；post傳輸重要的資料，直接加密方式傳送 -->
-            <form action="" method="get">
+            <form action="mailto:mandyyunmm@gmail.com?subject=詢問宥姍" method="post" target="_blank">
                 <!-- 姓名 電子信箱 問題 詳細內容 送出 重新輸入  -->
                 <!-- label 可以直接呼叫 input； for 與 id 相同設定 -->
                 <!-- name 欄位名稱，對應資料庫的欄位名稱；命名，不能用中文、開頭不能為數字 -->
@@ -153,29 +153,14 @@
                 <!-- 必填 required ；指定最多能輸入多少字 maxlength ；指定最少需要輸入多少字 minlength-->
                 <div id="NameBox">
                     <label for="UserName">姓名</label>
-                    <input type="text" name="" id="UserName" placeholder="請輸入中文姓名" required minlength="3" maxlength="5">
+                    <input type="text" name="姓名" id="UserName" placeholder="請輸入中文姓名" required minlength="3"
+                        maxlength="5">
                 </div>
 
                 <div class="Mail">
                     <label for="E_mail">電子信箱</label>
 
-                    <input type="email" name="" id="E_mail" required placeholder="輸入可以接收到的電子信箱">
-                </div>
-
-                <!-- label 沒有換行功能；目前樣式表無法控制 label 標籤，故用 li 作為外框 -->
-                <div class="E_mail2">
-                    <label for="E_mail2">
-                        電子信箱
-                        <!-- 單行文字，讓使用者自行輸入帳號； @ 固定出現； 信箱 gmail.com or yahoo.com等等，用 下拉式選單 讓使用者挑選 -->
-                        <input type="text" name="" id="E_mail2" required placeholder="輸入信箱名稱">
-                        <!-- 行內標籤 span 不換行，用來強調或是突顯單獨的顏色 -->
-                        <span>@</span>
-                        <select name="" id="">
-                            <option value="gmail.com">gmail.com</option>
-                            <option value="yahoo.com.tw">yahoo.com.tw</option>
-                            <option value="pchome.com">pchome.com</option>
-                        </select>
-                    </label>
+                    <input type="email" name="Email" id="E_mail" required placeholder="輸入可以接收到的電子信箱">
                 </div>
 
                 <!-- 詢問問題 -->
@@ -200,7 +185,7 @@
                 <div class="TextArea">
                     <li><label for="TextArea">詳細內容</label></li>
 
-                    <textarea name="" id="TextArea" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少 10 個字"
+                    <textarea name="Content" id="TextArea" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少 10 個字"
                         maxlength="100" minlength="10"></textarea>
                 </div>
 
