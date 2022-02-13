@@ -233,6 +233,7 @@ a {
   }
   header #BannerBox > .RadioBox > .ImgBox {
     width: 500vw;
+    font-size: 0;
   }
   header #BannerBox > .RadioBox > .ImgBox .SmallImg {
     width: 100vw;
